@@ -1,4 +1,4 @@
-/*Ques. Ten students (a,b,c,d,e,f,g,h,i,j) are going to attend an event. 
+/*Ques18. Ten students (a,b,c,d,e,f,g,h,i,j) are going to attend an event. 
 There are lots of gift shops, they all are going to the gift shops and 
 randomly picking the gifts. After picking the gifts they are randomly 
 arriving in the billing counter. The accountant gives the preference to 
@@ -6,7 +6,6 @@ that student who has maximum number of gifts.
 Create a C or Java program to define order of billed students?*/
  
  // case : 1) it gives higher priority to the students who have more no of gifts .
- //case : 2) if they have same no of gifts the the student(process)having less id is given priority.
 #include <stdio.h> 
 
 	int i,t,j,n;           //variable declaration
@@ -31,7 +30,7 @@ void get() //list of gifts taken by students  (entered value by user)
    {
 
      printf("\n\n");
-     printf("******************ENTERED DATA*****************\n\n");
+     printf("ENTERED DATA\n\n");
 	 printf( "\nSTUDENT NO.\t\tNO.OF GIFTS PURCHASED \n"); 
 
 	    for (i = 0; i < n; i++)  
@@ -70,7 +69,7 @@ int main()
      scanf("%d",&n);
      printf("ENTER THE COST OF ONE GIFT :- ");
      scanf("%f",&cost);
-     printf("***************ENTER THE NUMBER OF GIFTS CORRESPONDING TO EACH STUDENT *************");
+     printf("ENTER THE NUMBER OF GIFTS CORRESPONDING TO EACH STUDENT ");
         for(i=0;i<n;i++)
           {
               printf("\nSTUDENT_NO[%d] \n",i+1);
