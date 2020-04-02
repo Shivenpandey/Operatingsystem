@@ -44,7 +44,7 @@ void get() //list of gifts taken by students  (entered value by user)
 void sorting()    //arrangement of students according to no of gifts chosen 
    { 
    
-	printf("**********ORDER OF BILLED STUDENTS************* \n\n");
+	printf("ORDER OF BILLED STUDENTS \n\n");
 	    for(i=0;i<n;i++)
           {
     	      for(j=i+1;j<n;++j)
