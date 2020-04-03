@@ -75,7 +75,7 @@ int main()
               printf("\nSTUDENT_NO[%d] \n",i+1);
               printf("ENTER THE NUMBER OF GIFTS PURCHASED :");//user input data
               scanf("%d",&B_T[i]);
-              p_no[i]=i+1;           //its process number 
+              p_no[i]=i+1;           //it is process number 
           }
 
   
