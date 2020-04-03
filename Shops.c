@@ -4,15 +4,13 @@ randomly picking the gifts. After picking the gifts they are randomly
 arriving in the billing counter. The accountant gives the preference to 
 that student who has maximum number of gifts. 
 Create a C or Java program to define order of billed students?*/
- 
- // case : 1) it gives higher priority to the students who have more no of gifts .
 #include <stdio.h> 
 
-	int i,t,j,n;           //variable declaration
-	int B_T[10],p_no[10],bill[10]; //B_T=brust time ,p_no processno
+	int i,t,j,n;         
+	int B_T[10],p_no[10],bill[10]; 
 	float cost;
 	
- void billfn()              //bill generation
+ void billfn()    
     {		  
       printf( "STUDENT_NO\t\tTOTAL GIFTS PURCHASED\t\tBILL\n\n"); 
 
@@ -20,13 +18,13 @@ Create a C or Java program to define order of billed students?*/
 		   { 
 	           	printf("STUDENT NO. = %d \t\t" ,p_no[i]);
 		        printf("%d \t\t\t",B_T[i]);
-		        bill[i]= cost * B_T[i];           //calculating cost 
+		        bill[i]= cost * B_T[i];           
 	         	printf("%d \t\t\t",bill[i]); 
 	            printf("\n");
 	       }
     }
 
-void get() //list of gifts taken by students  (entered value by user)
+void get() 
    {
 
      printf("\n\n");
@@ -35,13 +33,13 @@ void get() //list of gifts taken by students  (entered value by user)
 
 	    for (i = 0; i < n; i++)  
 	      { 
-		      printf("STUDENT NO. = %d \t\t" ,p_no[i]);   //process no
-		      printf("%d \t\t\t",B_T[i]);                  //brust time
+		      printf("STUDENT NO. = %d \t\t" ,p_no[i]);   
+		      printf("%d \t\t\t",B_T[i]);                  
 	          printf("\n\n");
 	      } 
 	}
 
-void sorting()    //arrangement of students according to no of gifts chosen 
+void sorting()  
    { 
    
 	printf("ORDER OF BILLED STUDENTS \n\n");
@@ -49,13 +47,13 @@ void sorting()    //arrangement of students according to no of gifts chosen
           {
     	      for(j=i+1;j<n;++j)
 			     {
-		            if(B_T[i]<B_T[j])                               //student with max no of gifts is given priority
+		            if(B_T[i]<B_T[j])     
 					{
-		                t=B_T[i];                        //swapping the values 
+		                t=B_T[i];        
                    	    B_T[i]=B_T[j];
                         B_T[j]=t;
-                        t=p_no[i];           //t is temporary variable
-                        p_no[i]=p_no[j];                    //swapping the process no's
+                        t=p_no[i];          
+                        p_no[i]=p_no[j];            
                         p_no[j]=t;
                     }
                  }
@@ -65,7 +63,7 @@ void sorting()    //arrangement of students according to no of gifts chosen
 int main() 
 { 
 
-	 printf("ENTER THE NO OF STUDENTS WHO PURCHASE GIFT :- ");  // process number initialization
+	 printf("ENTER THE NO OF STUDENTS WHO PURCHASE GIFT :- "); 
      scanf("%d",&n);
      printf("ENTER THE COST OF ONE GIFT :- ");
      scanf("%f",&cost);
@@ -73,7 +71,7 @@ int main()
         for(i=0;i<n;i++)
           {
               printf("\nSTUDENT_NO[%d] \n",i+1);
-              printf("ENTER THE NUMBER OF GIFTS PURCHASED :");//user input data
+              printf("ENTER THE NUMBER OF GIFTS PURCHASED :");
               scanf("%d",&B_T[i]);
               p_no[i]=i+1;           //it is process number 
           }
