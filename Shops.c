@@ -82,5 +82,6 @@ int main()
         get();
         sorting();
         billfn();
+	return 0;
          
 }
